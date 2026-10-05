@@ -1,0 +1,404 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Portafolio - Julio Tzalam</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* MENÚ */
+        header {
+            background-color: #111827;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* INICIO */
+        #inicio {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+            padding: 30px;
+        }
+
+        .inicio-contenido h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .inicio-contenido p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: white;
+            color: #2563eb;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background-color: #38bdf8;
+            color: white;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #111827;
+        }
+
+        /* SOBRE MÍ */
+        .sobre-mi {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* HABILIDADES */
+        .habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .habilidad {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .habilidad h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        /* EXPERIENCIA */
+        .experiencia {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .experiencia-item {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .experiencia-item h3 {
+            color: #2563eb;
+            margin-bottom: 8px;
+        }
+
+        /* EDUCACIÓN */
+        .educacion {
+            background-color: #e5e7eb;
+        }
+
+        .educacion-contenido {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .educacion-item {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* CONTACTO */
+        .contacto {
+            text-align: center;
+        }
+
+        .contacto p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .inicio-contenido h2 {
+                font-size: 32px;
+            }
+        }
+        table{
+            align-self: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#educacion">Educación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <!-- INICIO -->
+
+    <section id="inicio">
+        <div class="inicio-contenido">
+            <h2>Hola, me llamo Julio Nery Marduqueo Tzalam Coc</h2>
+            <p>Estudiante de Cuarto Bachillerato en Computación y apsionado por aprender muchas cosas más.</p>
+
+            <table border="1" align="center">
+                <thead>
+                    <tr>
+                        <th>
+                            <img src="img/IMG_20260130_145612.jpg" alt="Mi Perfil Personal" width="400" height="700">
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+            <!--<img src="img/IMG_20260130_145612.jpg" alt="Mi Perfil Personal" width="400" height="600"> -->
+        </div>
+    </section>
+
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+
+        <h2>Sobre mí</h2>
+
+        <div class="sobre-mi">
+
+            <p>
+                Soy una persona que actualmente estoy estudiando sobre la tecnología,
+                he recibido clases en diferentes plataformas y al ganar los cursos gano diplomas,
+                pero no solo gano diplomas, sino también gano conocimientos, experincias, habilidades,
+                y nuevas aprendizajes.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+
+        <h2>Mis habilidades</h2>
+
+        <div class="habilidades">
+
+            <div class="habilidad">
+                <h3>HTML</h3>
+                <p>Creación de páginas web Básicas y estructuras HTML.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>CSS</h3>
+                <p>Diseño y estilos para páginas web Básicas.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Java</h3>
+                <p>Programaciones Básicas.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Excel</h3>
+                <p>Creación de bases de datos y sistemas de inventario.</p>
+            </div>
+
+            <div class="habilidad">
+                <h3>Redes</h3>
+                <p>Conocimientos básicos de redes y soporte informático.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+
+        <h2>Experiencia y proyectos</h2>
+
+        <div class="experiencia">
+
+            <div class="experiencia-item">
+
+                <h3>Sistema de Inventario en Excel</h3>
+
+                <p>
+                    Desarrollo de un sistema de inventario utilizando
+                    Excel, validación de datos, funciones,
+                    consultas y formato condicional.
+                </p>
+
+            </div>
+
+
+            <div class="experiencia-item">
+
+                <h3>Formulario de Registro HTML</h3>
+
+                <p>
+                    Creación de un formulario web para registrar
+                    información de estudiantes utilizando HTML.
+                </p>
+
+            </div>
+
+
+            <div class="experiencia-item">
+
+                <h3>Proyecto Web</h3>
+
+                <p>
+                    Desarrollo de páginas web utilizando HTML y CSS
+                    para practicar diseño y estructura web.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="educacion">
+
+        <h2>Educación</h2>
+
+        <div class="educacion-contenido">
+
+            <div class="educacion-item">
+
+                <h3>Estudios en Informática</h3>
+
+                <p>
+                    Formación académica enfocada en informática,
+                    programación, redes y soporte técnico.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <div class="contacto">
+
+            <p><strong>Correo:</strong> tzalamjulio639@gmail.com</p>
+
+            <p><strong>Teléfono:</strong> +502 3445-6554</p>
+
+            <p><strong>Ubicación:</strong> Guatemala</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 Julio Tzalam - Mi Portafolio
+        </p>
+        <h6>✔-------------------------------------------------------------------------✔</h6>
+        <h6>✔-------------------------------------------------------------------------✔</h6>
+    </footer>
+
+</body>
+</html>
